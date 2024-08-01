@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A and A Travels</title>
+    <link rel="icon" href="https://img.icons8.com/?size=100&id=1kKOO1QeMyZR&format=png&color=000000">
+    <link rel="stylesheet" href="style2.css">
+    <!-- @@@@@@@@@@@@@ ICONS @@@@@@@@@@@@@@@ -->
+    <script src="https://kit.fontawesome.com/84c677bc18.js" crossorigin="anonymous"></script>
+       <script>
+        function showSidebar()
+        {
+            const sidebar=document.querySelector('.sidebar')
+            sidebar.style.display='flex'
+        }
+        function hideSidebar()
+        {
+             const sidebar=document.querySelector('.sidebar')
+            sidebar.style.display='none'
+        }
+       </script>
+       <script>
+        let url='https://script.google.com/macros/s/AKfycbyVX0YqKEJ7KIAVjllw21VT5POq0bCMrsDlS5rdFMze0A-X1CDUeQTvtXB4MXvmda6Y/exec'
+        let form=document.querySelector('#form');
+        form.addEventListener("submit",(e)=>
+    {
+        let d=new FormData(form);
+        fetch(url,{method:"POST", body:d})
+        
+    }).then((res)=>res.text())
+    .then((finalRes)=>console.log(finalRes))
+    e.preventDefault();
+       </script>
+</head>
+<body>
+    <div id="HOME">
+    <nav>
+        <ul class="sidebar" type="none">
+            <li>NO ONE</li>
+            <li onclick="hideSidebar()"><svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></li>
+            <li><a href="#HOME">HOME</a></li>
+            <li><a href="#services">SERVICES</a></li>
+            <li><a href="#contact">CONTACT US</a></li>
+        </ul>
+    </nav>
+    <nav>
+        <ul type="none" class="head">
+
+            <li><a href="#HOME">A AND A TRAVELS</a></li>
+            <li class="hidemobile"><a href="#HOME">HOME</a></li>
+            <li class="hidemobile"><a href="#services">SERVICES</a></li>
+            <li class="hidemobile"><a href="#contact">CONTACT US</a></li>
+            <li class="hidescreen" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+        </ul>
+    </nav>
+    <div id="background">
+        <content>
+           
+           <div class="backimg">
+               <div class="contents">
+               
+                   <h1>WELCOME TO </h1><br>
+                   <div class="heading" style="text-align: center;">
+                   <h1> A AND A</h1>
+                   <h1>TRAVELS</h1>
+                   </div>
+                   <br>
+                   <h2>ALL INDIA TOUR</h2><br>
+                   <h2>TO YOUR FAVOURITE</h2>
+                   <h2>DESTINATION</h2>
+               </div>
+           </div>
+         </content>
+       </div>
+    </div>
+
+<div id="services">
+    <main>
+        <br><br><br>
+        <div class="maindestin">
+            <h1>OFFERS ALL INDIA TOURS</h1>
+            <h2>Made Affordable and Easy for You</h2>
+            <h2>To Go to your Favourite destination</h2>
+        </div>
+        <br><br>
+        <div class="destin">
+            <h2>CHAR DHAM YATRA</h2>
+            <h4>Special Offers</h4>
+        </div>
+
+
+        <div class="box">
+
+            <div class="box1">
+                <div class="imgbox">
+                    <img src="kedarnath.jpg" alt="kedarnathpic" width="100%">
+                    <h2>Kedarnath</h2>
+                </div>
+                <br>
+                <div class="textbox">
+                    <h3>Prices</h3>
+                </div>    
+            </div>
+
+
+            <br><br>
+
+
+            <div class="box2">
+                <div class="imgbox">
+                    <img src="badrinath.webp" alt="badrinathpic" width="100%">
+                    <h2>Badrinath</h2>
+                </div>
+                <br>
+                <div class="textbox">
+                    <h3>Prices</h3>
+                </div>
+            </div>
+
+
+            <br><br>
+
+
+            <div class="box3">
+                <div class="imgbox">
+                    <img src="gangotri.jpg" alt="gangotripic" width="100%">
+                    <h2>Gangotri</h2>
+                </div>
+                <br>
+                <div class="textbox">
+                    <h3>Prices</h3>
+                </div>
+            </div>
+
+            <br><br>
+            <div class="box4">
+                <div class="imgbox">
+                    <img src="yamunotri.jpg" alt="Yamunotripic" width="100%">
+                    <h2>Yamunotri</h2>
+                </div>
+                <br>
+                <div class="textbox">
+                    <h3>Prices</h3>
+                </div>
+            </div>
+
+
+          </div>
+          <br><br>
+        </main>
+       
+        
+    <div id="contact">
+        <br><br><br>
+        <form action="thankyou.html" target="_blank" method="post" name="google-sheet" id="form">
+            <table cellpadding="5px" cellspacing="20px">
+                <div class="tab">
+                    <br>
+            <thead><h1 style="color: rgb(0, 0, 0);">CONTACT US</h1></thead><br>
+            <tbody  style="color: rgb(31, 7, 25); font-weight: 1000;" >
+                <tr>
+                    <td> <label for="fname">Name:</label> <br> <input type="text" name="Name" id="Name" placeholder="Enter your Name" required></td>
+                </tr>
+                    
+                <tr>
+                    <td><label for="email">E-mail:</label> <br><input type="email" name="Email" id="Email" placeholder="Enter your E-mail" required></td>     
+                </tr>
+                 <tr>
+                <td><label for="wexp">Enquiry About:</label> <br><input type="text" name="Enquiry" id="Enquiry" placeholder="What you want to know" required></td>
+                </tr>
+            <tr>
+                <td><label for="mno">Mobile Number:</label> <br><input type="text" maxlength="10" name="Mobile_No" id="Mobile_No" placeholder="Enter your Number"required></td>
+            </tr>
+            </tbody>
+        </table>
+        <button class="submit" name="submit">SUBMIT</button><br><br>
+        <button class="reset" name="reset"><input type="RESET"></button>
+    </form>
+    <br><br>
+    </div>
+    
+    </div>
+    
+    </div>
+
+
+    <footer>
+    <div class="footer">
+        <br><br><br>
+        <h3 style="text-align: center;">Get In Touch</h2><br>
+        <p>Vijaypur Hathibarkala Dehradun&nbsp;&nbsp;<i class="fa-solid fa-location-dot" style="color: #000000;"></i>&nbsp;</p>
+        <p>upakhilesh@gmail.com &nbsp;&nbsp;<i class="fa-brands fa-telegram" style="color: #000000;"></i>&nbsp;</p>
+        <p>+91&nbsp;9756354502 &nbsp;&nbsp;+91&nbsp;8126152907&nbsp;&nbsp;<i class="fa-solid fa-phone" style="color: #000000;"></i></p>
+    </div>
+    <div class="footext">
+        <p>copyright&nbsp;<i class="fa-regular fa-copyright"></i>2024</p>
+    </div>
+    </footer>
+
+
+</div>
+
+
+</body>
+</html>
